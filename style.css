@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* INICIO HEADER */
+.nav {
+    background-color: #181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* Deixar o menu fixo em cima */
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #DDD;
+    padding: 20px;
+}
+.nav-list a:hover {
+    color: #FFF;
+}
+/* FIM HEADER */
+
+
+/* INICIO MAIN */
+.main {
+    width: 100%;
+    /* height: 500px; posso manter fixa, mas no projeto, pede a tela toda */
+    height: calc(100vh - 80px); /*100vh -> tela toda, 80px é a altura do header/main (80)*/
+
+    background-color: #000;
+    background-image: linear-gradient(150deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.614)), url('img/capa3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    padding: 10%;
+}
+
+.main h1 {
+    color: #FFF ;
+    font-size: 50px;
+}
+.main p {
+    color: #FFF;
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96fc;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.main a {
+    text-decoration: none;
+}
+.call-to-action {
+    cursor: pointer;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #1c1c1c;
+}
+.call-to-action:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+/* FIM MAIN */
+
+
+/* INICIO ABOUT */
+.about{
+    background-color: #FFF;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+}
+.about div {
+    max-width: 50%;
+    padding-right: 40px;
+}
+.about img {
+    max-width: 450px;
+    border-radius: 8px;
+}
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+/* FIM ABOUT */
+
+
+/* INICIO PROJECT */
+.projects img {
+    width: 20%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    opacity:0.6;
+}
+.projects img:hover{
+    opacity: 1;
+    transition: 0.9s;
+}
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+    justify-content: center;
+    padding: 80px 0px;
+    background-color: rgba(93, 93, 93, 0.2);
+    
+}
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+.projects p {
+    margin-bottom: 40px;
+    font-style: italic;
+}
+.project-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM PROJECT */
