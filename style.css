@@ -78,7 +78,7 @@ body {
     border-radius: 8px;
     font-size: 18px;
     font-weight: bolder;
-    color: #1c1c1c;
+    /* color: #1c1c1c; */
 }
 .call-to-action:hover{
     transform: scale(1.1);
@@ -151,6 +151,82 @@ body {
     justify-content: center;
     align-items: center;
 }
+section .btn-img {
+    background-color: #181818;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: bolder;
+    padding: 10px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* INICIO FOOTER */
+footer {
+    width: 100%;
+    background-color:#181818 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    color: #FFF;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1050px) {
+    /* INICIO MAIN */
+    .main h1 {
+        font-size: 45px ;
+    }
+    .main p {
+        font-size: 18px;
+    }
+    .main {
+        background-size: cover ;
+    }
+
+    /* INICIO SOBRE */
+    .about {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .about div {
+        max-width: 80%;
+    }
+    .about h2 {
+        font-size: 45px;
+    }
+    .about img {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+
+    /* INICIO PROJETO */
+
+    .projects img {
+        width: 27.5%;
+    }
+
+    /* INICIO RODAPÉ */
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        margin: 0;
+        font-size: 15px;
+    }
+}
+
+
 
 
 
